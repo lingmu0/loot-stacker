@@ -189,6 +189,7 @@ tasks.named('processResources', ProcessResources).configure {
                              mod_authors         : mod_authors, mod_description: mod_description,]
 
     inputs.properties replaceProperties
+    inputs.property 'includeTestLoot', includeTestLoot
 
     filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
         expand replaceProperties + [project: project]
