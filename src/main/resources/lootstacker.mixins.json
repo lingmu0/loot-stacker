@@ -1,9 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.xuwu.demo.mixin",
-  "compatibilityLevel": "JAVA_8",
-  "refmap": "demo.refmap.json",
+  "package": "net.xuwu.lootstacker.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "lootstacker.refmap.json",
+  "plugin": "net.xuwu.lootstacker.mixin.LootStackerMixinPlugin",
   "mixins": [
   ],
   "client": [

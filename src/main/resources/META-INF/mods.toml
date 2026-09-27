@@ -40,6 +40,9 @@ authors = "${mod_authors}" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description = '''${mod_description}'''
+
+[[mixins]]
+config = "${mod_id}.mixins.json"
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies."${mod_id}"]] #optional
 # the modid of the dependency
@@ -60,4 +63,11 @@ mandatory = true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
+side = "BOTH"
+# Do not duplicate the loot stacking provided by PackCoreMod.
+[[dependencies."${mod_id}"]]
+modId = "scholarofcrimson"
+mandatory = false
+versionRange = "[0,)"
+ordering = "AFTER"
 side = "BOTH"
