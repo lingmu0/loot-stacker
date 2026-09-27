@@ -17,3 +17,9 @@
 ```
 
 打开箱子触发生成。启用本模组时预期六种物品各占一格；未启用时，超过箱子 27 格容量的部分无法放入。若要把测试表临时打入 JAR，可在构建时加 `-PincludeTestLoot=true`。
+
+另有 `lootstacker:chests/four_items_30_rolls` 测试表：4 种物品共 roll 30 次。生成指令：
+
+```mcfunction
+/setblock ~2 ~ ~ minecraft:chest{LootTable:"lootstacker:chests/four_items_30_rolls",LootTableSeed:1L} replace
+```
