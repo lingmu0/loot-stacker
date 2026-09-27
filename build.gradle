@@ -98,6 +98,9 @@ def includeTestLoot = gradle.startParameter.taskNames.any { taskName ->
 if (includeTestLoot) {
     sourceSets.main.resources.srcDir 'src/testLoot/resources'
 }
+tasks.named('processResources') {
+    inputs.property('includeTestLoot', includeTestLoot)
+}
 
 
 dependencies {
