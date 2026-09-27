@@ -1,6 +1,6 @@
 # Loot Stacker
 
-This mod automatically stacks items in loot chests to prevent loot tables with too many entries from filling every chest slot and blocking subsequent loot from generating.
+This mod automatically stacks items in loot chests, preventing loot tables with too many entries from filling every chest slot and blocking subsequent loot from generating.
 
 ## Supported versions
 
@@ -10,6 +10,10 @@ This mod automatically stacks items in loot chests to prevent loot tables with t
 | 1.21.1 | NeoForge | 21 | `mc-1.21.1` |
 
 This is a standalone port of the loot-stacking feature from the latest PackCoreMod commit (`978a218`). If PackCoreMod (`scholarofcrimson`) is loaded at the same time, Loot Stacker disables its own mixin to prevent the feature from running twice.
+
+## Server-side installation
+
+For multiplayer, install the mod on the server only; clients do not need to install it. Single-player still requires the mod in the client installation because the client runs the integrated server.
 
 ## Build
 

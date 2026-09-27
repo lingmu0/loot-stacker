@@ -25,3 +25,11 @@
 ```
 
 源码版本分支：`mc-1.20.1`（Forge）和 `mc-1.21.1`（NeoForge）。
+
+## English Description
+
+This mod automatically stacks items in loot chests, preventing loot tables with too many entries from filling every chest slot and blocking subsequent loot from generating.
+
+## 服务端安装
+
+多人游戏只需将模组安装在服务器上，客户端无需安装。单人游戏的集成服务器由客户端启动，因此单人游戏仍需在客户端安装模组。
