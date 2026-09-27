@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 30.0,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:stone" },
+        { "type": "minecraft:item", "name": "minecraft:dirt" },
+        { "type": "minecraft:item", "name": "minecraft:cobblestone" },
+        { "type": "minecraft:item", "name": "minecraft:oak_log" }
+      ]
+    }
+  ],
+  "random_sequence": "lootstacker:chests/four_items_30_rolls"
+}
