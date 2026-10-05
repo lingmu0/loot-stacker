@@ -6,6 +6,7 @@
   "refmap": "lootstacker.refmap.json",
   "plugin": "net.xuwu.lootstacker.mixin.LootStackerMixinPlugin",
   "mixins": [
+    "lootstacker.MixinLootTable"
   ],
   "client": [
   ],
