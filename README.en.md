@@ -8,6 +8,7 @@ This mod automatically stacks items in loot chests, preventing loot tables with 
 | --- | --- | --- | --- |
 | 1.20.1 | Forge | 17 | `mc-1.20.1` |
 | 1.21.1 | NeoForge | 21 | `mc-1.21.1` |
+| 26.1.2 | NeoForge | 25 | `mc-26.1.2` |
 
 This is a standalone port of the loot-stacking feature from the latest PackCoreMod commit (`978a218`). If PackCoreMod (`scholarofcrimson`) is loaded at the same time, Loot Stacker disables its own mixin to prevent the feature from running twice.
 
@@ -17,7 +18,7 @@ For multiplayer, install the mod on the server only; clients do not need to inst
 
 ## Build
 
-Use the Java version listed above for the selected branch, then run `gradlew.bat build` from the project directory. The mod JAR is generated in `build/libs/`.
+Use Java 25 in this branch, then run `gradlew.bat build` from the project directory. This branch uses NeoForge 26.1.2.107 and Gradle 9.2.1. The release JAR is generated at `build/libs/lootstacker-neoforge-26.1.2-1.0.0a.jar`.
 
 ## Test loot tables
 

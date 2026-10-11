@@ -1,6 +1,6 @@
 package net.xuwu.lootstacker.mixin;
 
-import net.neoforged.fml.loading.LoadingModList;
+import net.neoforged.fml.loading.FMLLoader;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -22,9 +22,7 @@ public final class LootStackerMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-        boolean packCoreLoaded = LoadingModList.get().getMods().stream()
-                .anyMatch(mod -> PACK_CORE_MOD_ID.equals(mod.getModId()));
-        return !packCoreLoaded;
+        return FMLLoader.getCurrent().getLoadingModList().getModFileById(PACK_CORE_MOD_ID) == null;
     }
 
     @Override

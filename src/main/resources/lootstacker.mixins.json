@@ -2,8 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "net.xuwu.lootstacker.mixin",
-  "compatibilityLevel": "JAVA_21",
-  "refmap": "lootstacker.refmap.json",
+  "compatibilityLevel": "JAVA_25",
   "plugin": "net.xuwu.lootstacker.mixin.LootStackerMixinPlugin",
   "mixins": [
     "lootstacker.MixinLootTable"

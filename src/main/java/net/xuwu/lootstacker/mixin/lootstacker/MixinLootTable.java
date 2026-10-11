@@ -12,7 +12,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LootTable.class)
 public abstract class MixinLootTable {
-    @Inject(method = "shuffleAndSplitItems", at = @At("TAIL"))
+    @Inject(
+            method = "shuffleAndSplitItems(Lit/unimi/dsi/fastutil/objects/ObjectArrayList;ILnet/minecraft/util/RandomSource;)V",
+            at = @At("TAIL")
+    )
     private void lootstacker$mergeStackableLoot(
             ObjectArrayList<ItemStack> stacks,
             int emptySlotsCount,

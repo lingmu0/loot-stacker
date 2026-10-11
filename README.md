@@ -1,10 +1,12 @@
-# Loot Stacker — Minecraft NeoForge 1.21.1
+# Loot Stacker — Minecraft NeoForge 26.1.2
 
 独立移植自 PackCoreMod 最新提交 `978a218` 的战利品堆叠功能。战利品表填充容器前，会把物品与数据组件完全相同、且可堆叠的物品合并；若检测到 `scholarofcrimson`（PackCoreMod）已加载，本模组的 Mixin 会自动跳过，避免重复生效。
 
 ## 构建
 
-使用 Java 21，在本目录运行 `gradlew.bat build`。产物位于 `build/libs/`。
+使用 Java 25，在本目录运行 `gradlew.bat build`。本分支使用 NeoForge 26.1.2.107 和 Gradle 9.2.1，产物位于 `build/libs/lootstacker-neoforge-26.1.2-1.0.0a.jar`。
+
+本分支为 `mc-26.1.2`；Forge 1.20.1 和 NeoForge 1.21.1 分别保留在 `mc-1.20.1` 和 `mc-1.21.1` 分支。
 
 ## 测试用箱子
 
